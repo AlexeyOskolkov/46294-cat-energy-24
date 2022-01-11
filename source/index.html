@@ -13,7 +13,7 @@
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
+          <ul class="main-nav__list visually-hidden">
             <li class="main-nav__item main-nav__item--active">
               <a href="index.html">
                 Главная
@@ -38,8 +38,8 @@
         <div class="promo__wrapper">
           <h1 class="promo__title">Функциональное питание для котов</h1>
           <p class="promo__description">Занялся собой? Займись котом!</p>
+          <img class="promo--image" src="img/main/promo/promo--image__can.png" width="280" height="270" alt="">
           <button class="promo__button button" type="button">Подобрать программу</button>
-          <img class="promo--image" src="img/main/promo/promo--image__can.png" width="552" height="499" alt="Логотип Кэт энерджи">
         </div>
       </section>
       <section class="catalog-diet">
@@ -99,15 +99,8 @@
                 затрачено времени
               </dd>
             </div>
-            <div class="stats__item">
-              <dt class="stats__number stats__number--money">
-                15 000 руб.
-              </dt>
-              <dd class="stats__description stats__description--money">
-                затраты на питание
-              </dd>
-            </div>
           </dl>
+          <p class="stats__item stats__item--money">Затраты на питание: 15 000 руб.</p>
           <div class="cat-slider">
             <img class="cat-slider__image" src="./img/main/example/cat--before.png" width="280" height="232" alt="">
             <div class="cat-slider__range-scale">
@@ -121,7 +114,7 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__contacts contacts">
           <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
