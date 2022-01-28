@@ -15,20 +15,35 @@
 }
 
 .promo__wrapper {
-  width: 320px;
+  min-width: 480px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 @media (min-width: @tablet-width) {
   .promo__wrapper {
-    width: 768px;
+    min-width: 870px;
+    padding: 0 30px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .promo__wrapper {
     display: flex;
-    width: 1140px;
+    min-width: 585px;
+    padding: 0 110px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .promo__wrapper--left-side {
+    padding-left: 97px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__wrapper--left-side {
+    padding-left: 160px;
   }
 }
 
