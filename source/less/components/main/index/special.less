@@ -1,12 +1,23 @@
 .special {
   font-weight: 400;
   background-color: #ffffff;
-  padding: 0 20px;
 }
 
 .special__wrapper {
   width: 320px;
   margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .special__wrapper {
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .special__wrapper {
+    width: 1140px;
+  }
 }
 
 .special__title {
@@ -17,6 +28,13 @@
   color: #000000;
 }
 
+@media (min-width: @tablet-width) {
+  .special__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
 .special__description {
   font-family: "Arial", sans-serif;
   font-size: 14px;
@@ -24,11 +42,38 @@
   color: #000000;
 }
 
+@media (min-width: @tablet-width) {
+  .special__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
 .special__list {
   padding: 0;
   margin: 0;
 }
 
+@media (min-width: @tablet-width) {
+  .special__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 125px 175px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .special__list {
+    gap: 30px;
+  }
+}
+
 .special__item {
   list-style-type: none;
+}
+
+@media (min-width: @tablet-width) {
+  .special__item {
+    max-width: 250px;
+  }
 }

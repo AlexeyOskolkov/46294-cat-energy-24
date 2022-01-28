@@ -6,6 +6,17 @@
 }
 
 .page-header__wrapper {
-  max-width: 320px;
+  width: 320px;
   margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__wrapper {
+    display: flex;
+    width: 768px;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
 }
