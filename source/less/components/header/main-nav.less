@@ -2,20 +2,38 @@
   background-color: #ffffff;
 }
 
+@media (min-width: @tablet-width) {
+  .main-nav {
+    margin-left: auto;
+  }
+}
+
 .main-nav__list {
   text-align: center;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__list {
+    display: flex;
+    gap: 30px;
+  }
 }
 
 .main-nav__item {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 20px;
+  line-height: 20px;
   text-transform: uppercase;
   color: #000000;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__item {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .main-nav__item a {

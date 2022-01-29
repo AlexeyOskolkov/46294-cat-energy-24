@@ -15,11 +15,25 @@
   color: #000000;
 }
 
+@media (min-width: @tablet-width) {
+  .product-additional__title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
 .product-additional__description {
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
   color: @special_dark-grey;
+}
+
+@media (min-width: @tablet-width) {
+  .product-additional__description {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .product-additional__price {
@@ -29,6 +43,25 @@
   color: @special_dark-grey;
 }
 
+@media (min-width: @tablet-width) {
+  .product-additional__price {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
 .product-additional__item {
   list-style-type: none;
+}
+
+@media (min-width: @desktop-width) {
+  .product-additional__item {
+    display: flex;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .product-additional__wrapper {
+    display: flex;
+  }
 }

@@ -3,9 +3,35 @@
   background-color: @basic_grey;
 }
 
+@media (min-width: @tablet-width) {
+  .example {
+    background-color: #ffffff;
+  }
+}
+
 .example__wrapper {
-  width: 320px;
   margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .example__wrapper {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example__wrapper {
+    padding: 0 110px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: @basic_grey;
+  }
 }
 
 .example__title {
@@ -14,13 +40,17 @@
   font-size: 36px;
   line-height: 40px;
   color: #000000;
-  padding: 0 20px;
 }
 
-.example__description {
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  color: #000000;
-  max-width: 450px;
+@media (min-width: @tablet-width) {
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example__title {
+    width: 1440px;
+  }
 }

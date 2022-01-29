@@ -1,9 +1,54 @@
+.stats__text {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  max-width: 450px;
+}
+
+@media (min-width: @tablet-width) {
+  .stats__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .stats__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .stats__container {
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .stats__container {
+    display: block;
+  }
+}
+
+.stats__wrapper {
+  display: flex;
+}
+
 .stats__number {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
   color: #000000;
+}
+
+@media (min-width: @tablet-width) {
+  .stats__number {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .stats__description {
@@ -13,9 +58,23 @@
   color: #000000;
 }
 
+@media (min-width: @tablet-width) {
+  .stats__description {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
 .stats__item--money {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .stats__item--money {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
