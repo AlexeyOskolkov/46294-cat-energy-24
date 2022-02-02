@@ -1,7 +1,6 @@
 .products__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 80px;
   font-weight: 400;
   background-color: #ffffff;
   padding: 0;
@@ -9,18 +8,25 @@
 }
 
 .products__item {
-  background-color: @basic_grey;
   list-style-type: none;
   margin: 0 auto;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 @media (min-width: @tablet-width) {
   .products__item {
+    background-color: @basic_grey;
     padding: 39px;
   }
 }
 
 .products__item--last {
-  background-color: #ffffff;
-  border: 2px solid @basic_grey;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .products__item--last {
+    border: 2px solid @basic_grey;
+  }
 }
