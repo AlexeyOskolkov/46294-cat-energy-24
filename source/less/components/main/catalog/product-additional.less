@@ -7,6 +7,12 @@
   color: #000000;
 }
 
+@media (min-width: @desktop-width) {
+  .product-additional {
+    min-width: 900px;
+  }
+}
+
 .product-additional__list {
   margin: 0;
   padding: 0;
@@ -37,6 +43,13 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .product-additional__wrapper {
+    min-width: 612px;
+    margin-right: 38px;
+  }
+}
+
 .product-additional__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
@@ -53,6 +66,7 @@
   .product-additional__title {
     font-size: 20px;
     line-height: 20px;
+    width: auto;
   }
 }
 
@@ -101,6 +115,13 @@
 @media (min-width: @tablet-width) {
   .product-additional__button {
     display: flex;
+    background-color: @basic_green;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product-additional__button {
+    display: block;
     background-color: @basic_green;
   }
 }

@@ -12,23 +12,39 @@
   }
 }
 
-.form-owner__wrapper {
-  margin: 0;
-  padding: 0;
-}
-
 .form-owner__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 26px;
   color: #000000;
+  padding-top: 26px;
+  padding-bottom: 35px;
 }
 
-.form-label {
+.form-owner__wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+.form-owner__item {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 14px;
+  padding: 0;
+
+  &:last-child {
+    margin-bottom: 25px;
+  }
+}
+
+
+.form-owner__label {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   color: @special_dark-grey;
   text-transform: uppercase;
+  margin-right: 11px;
 }

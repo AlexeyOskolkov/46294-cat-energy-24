@@ -1,10 +1,24 @@
 .catalog-additional__banner {
   background-color: @basic_green;
+  background-image: url("../source/img/main/catalog/catalog-additional__banner.png");
+  background-repeat: no-repeat;
+  padding: 60px 43px;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-additional__banner {
+    margin: 0;
+    padding-left: 422px;
+    padding-top: 70px;
+    padding-right: 154px;
+    padding-bottom: 70px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .catalog-additional__banner {
     margin-left: 80px;
+    padding: 41px;
   }
 }
 

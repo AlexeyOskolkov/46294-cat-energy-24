@@ -74,10 +74,10 @@
     </header>
     <main class="page-form form">
       <h1 class="form__title">Подбор программы</h1>
-      <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <p class="form__description">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
       <fieldset class="form-cat">
         <legend class="visually-hidden">Данные кота</legend>
-        <form class="form-cat__wrapper form" action="https://echo.htmlacademy.ru" method="post">
+        <form class="form-cat__wrapper" action="https://echo.htmlacademy.ru" method="post">
           <p class="field-group form-cat__item">
             <label class="form-cat__label form-cat__label--name">Имя:*</label>
             <input class="field" placeholder="Барсик" type="text" name="form-cat" required>
@@ -122,22 +122,22 @@
       </fieldset>
       <fieldset class="form-owner">
         <legend class="form-owner__title">Контактные данные (владельца кота)</legend>
-        <form class="form-owner__wrapper form" action="https://echo.htmlacademy.ru" method="post">
+        <form class="form-owner__wrapper" action="https://echo.htmlacademy.ru" method="post">
           <p class="field-group form-owner__item">
-            <label class="form-label" for="newsletter-email">Email:*</label>
+            <label class="form-owner__label" for="newsletter-email">Email:*</label>
             <input class="field" placeholder="kuklachev@gmail.com" type="email" name="form-owner--email" required>
           </p>
           <p class="field-group form-owner__item">
-            <label class="form-label" for="appointment-form-phone">Телефон:*</label>
+            <label class="form-owner__label" for="appointment-form-phone">Телефон:*</label>
             <input class="field" placeholder="8 (960) 900-60-90" type="text" name="form-owner--phone" required>
           </p>
         </form>
       </fieldset>
       <fieldset class="form-comments">
         <legend class="form-comments__title">Комментарий</legend>
-        <form class="form-comments__wrapper form" action="https://echo.htmlacademy.ru" method="post">
+        <form class="form-comments__wrapper" action="https://echo.htmlacademy.ru" method="post">
           <p class="field-group form-comments__item">
-            <input class="field" placeholder="Расскажите обо всех повадках кота" type="text" name="appointment-add">
+            <input class="field form-comments__field" placeholder="Расскажите обо всех повадках кота" type="text" name="appointment-add">
           </p>
         </form>
       </fieldset>
@@ -147,28 +147,28 @@
           <ul class="form-additional__list">
             <li class="form-additional__item">
               <label class="control">
-                <input class="visually-hidden control-input" type="checkbox" name="form-additional--sweetener" checked>
-                <span class="control-mark"></span>
+                <input class="visually-hidden control__input" type="checkbox" name="form-additional" checked>
+                <span class="control__mark"></span>
                 <span class="control__label">Сахарозаменитель</span>
               </label>
             </li>
             <li class="form-additional__item">
               <label class="control">
-                <input class="visually-hidden control__input" type="checkbox" name="form-additional--water">
+                <input class="visually-hidden control__input" type="checkbox" name="form-additional">
                 <span class="control__mark"></span>
                 <span class="control__label">Питевая вода</span>
               </label>
             </li>
             <li class="form-additional__item">
               <label class="control">
-                <input class="visually-hidden control__input" type="checkbox" name="form-additional--milk">
+                <input class="visually-hidden control__input" type="checkbox" name="form-additional">
                 <span class="control__mark"></span>
                 <span class="control__label">Молоко</span>
               </label>
             </li>
             <li class="form-additional__item">
               <label class="control">
-                <input class="visually-hidden control__input" type="checkbox" name="form-additional--vitamin">
+                <input class="visually-hidden control__input" type="checkbox" name="form-additional">
                 <span class="control__mark"></span>
                 <span class="control__label">Витамины</span>
               </label>
@@ -189,7 +189,7 @@
         </div>
         <div class="page-footer__maps maps">
           <h2 class="visually-hidden">Как нас найти</h2>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.6493244547409!2d30.322201008225!3d59.93882415666065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1643720336373!5m2!1sru!2sru" width="1440" height="400" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+          <iframe class="maps__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.6493244547409!2d30.322201008225!3d59.93882415666065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1643720336373!5m2!1sru!2sru" width="auto" height="400" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
         <div class="page-footer__wrapper--bottom">
           <div class="page-footer__logo logo">
