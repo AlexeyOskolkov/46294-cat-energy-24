@@ -1,16 +1,96 @@
 .catalog-additional__banner {
+  position: relative;
   background-color: @basic_green;
+  background-image: url("/img/main/catalog/catalog-additional__banner.png");
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 290px;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-additional__banner {
+    background-color: @basic_green;
+    background-image: url("/img/main/catalog/catalog-additional__banner--tablet.png");
+    background-repeat: no-repeat;
+    width: 707px;
+    height: 200px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .catalog-additional__banner {
-    margin-left: 80px;
+    background-image: url("/img/main/catalog/catalog-additional__banner.png");
+    width: 280px;
+    height: 290px;
   }
 }
 
 .banner__description {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+  margin: 0;
+  padding: 60px 43px;
+  padding-top: 187px;
+  text-align: center;
+
+  &::before {
+    position: absolute;
+    top: 59px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 78px;
+    height: 80px;
+    background-image: url("/img/main/catalog/catalog-additional__banner__gift.svg");
+    content: "";
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .banner__description {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    padding: 70px 124px;
+    padding-left: 422px;
+    text-align: start;
+
+    &::before {
+      position: absolute;
+      top: 57px;
+      left: -467px;
+      width: 78px;
+      height: 80px;
+      background-image: url("/img/main/catalog/catalog-additional__banner__gift.svg");
+      content: "";
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .banner__description {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    margin: 0;
+    padding: 60px 43px;
+    padding-top: 187px;
+    text-align: center;
+
+    &::before {
+      position: absolute;
+      top: 59px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 78px;
+      height: 80px;
+      background-image: url("/img/main/catalog/catalog-additional__banner__gift.svg");
+      content: "";
+    }
+  }
 }

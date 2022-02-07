@@ -4,19 +4,20 @@
 }
 
 .catalog__wrapper {
-  max-width: 320px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 @media (min-width: @tablet-width) {
   .catalog__wrapper {
-    max-width: 768px;
+    padding: 0 30px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .catalog__wrapper {
-    max-width: 1440px;
+    max-width: 1220px;
+    padding: 0 110px;
   }
 }
 
@@ -26,11 +27,19 @@
   font-size: 36px;
   line-height: 36px;
   color: #000000;
+  margin: 0;
+  padding: 0;
+  padding-top: 27px;
+  padding-bottom: 41px;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 @media (min-width: @tablet-width) {
   .catalog__title {
     font-size: 60px;
     line-height: 60px;
+    border: none;
+    margin-bottom: 90px;
   }
 }

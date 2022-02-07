@@ -1,29 +1,18 @@
 .form {
-  max-width: 320px;
   padding: 0 20px;
   margin: 0 auto;
 }
 
 @media (min-width: @tablet-width) {
   .form {
-    max-width: 768px;
+    padding: 0 30px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .form {
-    max-width: 1440px;
-  }
-}
-
-.form__wrapper {
-  font-weight: 400;
-  background-color: #ffffff;
-}
-
-@media (min-width: @desktop-width) {
-  .form__wrapper {
-    display: flex;
+    max-width: 1220px;
+    padding: 0 110px;
   }
 }
 
@@ -33,12 +22,18 @@
   font-size: 36px;
   line-height: 36px;
   color: #000000;
+  padding-top: 27px;
+  margin: 0;
+  margin-bottom: 37px;
+  border-top: 1px solid #d9d9d9;
 }
 
 @media (min-width: @tablet-width) {
   .form__title {
     font-size: 60px;
     line-height: 60px;
+    border: none;
+    margin-bottom: 55px;
   }
 }
 
@@ -48,24 +43,54 @@
   line-height: 18px;
   color: #000000;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 39px;
 }
 
 @media (min-width: @tablet-width) {
   .form__description {
     font-size: 20px;
     line-height: 30px;
+    margin-bottom: 66px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__wrapper {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
 @media (min-width: @tablet-width) {
   .form__required--wrapper {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 72px;
   }
 }
 
 .form__button {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  width: 100%;
+  color: #ffffff;
+  background-color: @basic_green;
   padding: 10px 53px;
+}
+
+@media (min-width: @tablet-width) {
+  .form__button {
+    width: 282px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__button {
+    width: 568px;
+  }
 }
 
 .form__required {
@@ -73,4 +98,17 @@
   font-size: 14px;
   line-height: 16px;
   color: #000000;
+  margin: 0;
+  margin-top: 21px;
+  margin-bottom: 32px;
+  padding: 0;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .form__required {
+    margin: 0;
+    margin-left: 61px;
+    padding: 0;
+  }
 }

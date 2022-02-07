@@ -1,6 +1,9 @@
 .form-additional {
   font-weight: 400;
   background-color: #ffffff;
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .form-additional__title {
@@ -8,6 +11,13 @@
   font-size: 24px;
   line-height: 26px;
   color: #000000;
+  margin-bottom: 34px;
+}
+
+@media (min-width: @tablet-width) {
+  .form-additional__title {
+    margin-bottom: 57px;
+  }
 }
 
 .form-additional__list {
@@ -23,9 +33,32 @@
   }
 }
 
+.form-additional__item {
+  margin-left: 16px;
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-bottom: 41px;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .form-additional__item {
     min-width: 300px;
+
+    &:last-child {
+      margin-bottom: 54px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-additional__item {
+    min-width: 280px;
+
+    &:last-child {
+      margin-bottom: 54px;
+    }
   }
 }
 

@@ -1,9 +1,30 @@
 .social__list {
   display: flex;
+  justify-content: center;
   padding: 0;
   margin: 0;
 }
 
 .social__item {
+  stroke: #666666;
+  margin-right: 37px;
   list-style-type: none;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    stroke: @basic_green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .social__item {
+    margin-right: 20px;
+  }
 }

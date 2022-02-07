@@ -5,6 +5,67 @@
   font-size: 16px;
   line-height: 20px;
   color: #000000;
+  margin-bottom: 35px;
+}
+
+@media (min-width: @tablet-width) {
+  .product-additional {
+    margin-bottom: 69px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product-additional {
+    min-width: 900px;
+    margin-bottom: 86px;
+  }
+}
+
+.product-additional__list {
+  margin: 0;
+  padding: 0;
+}
+
+.product-additional__item {
+  list-style-type: none;
+  border-bottom: 1px solid #e6e6e6;
+
+  &:first-child {
+    border-top: 1px solid #e6e6e6;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product-additional__item:first-child {
+    border-top: 1px solid #e6e6e6;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product-additional__item {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.product-additional__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (min-width: @tablet-width) {
+  .product-additional__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product-additional__wrapper {
+    min-width: 612px;
+    margin-right: 38px;
+  }
 }
 
 .product-additional__title {
@@ -13,12 +74,17 @@
   line-height: 16px;
   text-transform: uppercase;
   color: #000000;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 13px;
 }
 
 @media (min-width: @tablet-width) {
   .product-additional__title {
     font-size: 20px;
     line-height: 20px;
+    width: auto;
   }
 }
 
@@ -27,6 +93,9 @@
   font-size: 14px;
   line-height: 14px;
   color: @special_dark-grey;
+  margin: 0;
+  padding: 0;
+  padding-top: 13px;
 }
 
 @media (min-width: @tablet-width) {
@@ -41,6 +110,9 @@
   font-size: 14px;
   line-height: 14px;
   color: @special_dark-grey;
+  margin: 0;
+  padding: 0;
+  padding-top: 13px;
 }
 
 @media (min-width: @tablet-width) {
@@ -50,27 +122,30 @@
   }
 }
 
-.product-additional__item {
-  list-style-type: none;
-}
+.product-additional__button {
+  width: 100%;
+  color: #ffffff;
+  background-color: @basic_green;
+  margin-top: 15px;
+  margin-bottom: 19px;
 
-@media (min-width: @desktop-width) {
-  .product-additional__item {
-    display: flex;
-    justify-content: space-between;
+  &:hover {
+    background-color: #5eaa2f;
   }
-}
 
-@media (min-width: @tablet-width) {
-  .product-additional__wrapper {
-    display: flex;
-    justify-content: space-between;
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 
 @media (min-width: @tablet-width) {
   .product-additional__button {
     display: flex;
-    align-content: stretch;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product-additional__button {
+    display: block;
   }
 }

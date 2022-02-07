@@ -1,0 +1,92 @@
+.control__label {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: @special_dark-grey-2;
+  text-transform: uppercase;
+  margin-left: 45px;
+}
+
+@media (min-width: @tablet-width) {
+  .control__label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.control {
+  position: relative;
+}
+
+.control__radio {
+  position: absolute;
+  top: calc(50% - 30px / 2);
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+}
+
+.control:hover .control__radio {
+  border: 1px solid #bababa;
+}
+
+.control:disabled .control__radio {
+  border: 1px solid #bababa;
+  opacity: 0.3;
+}
+
+.control__input[type="radio"]:checked + .control__radio::before {
+  position: absolute;
+  top: calc(50% - 18px / 2);
+  left: calc(50% - 18px / 2);
+  width: 18px;
+  height: 18px;
+  background-color: @basic_green;
+  border-radius: 50%;
+  content: "";
+}
+
+.control__input[type="radio"]:checked:hover + .control__radio::before {
+  background-color: @basic_green;
+}
+
+.control__input[type="radio"]:checked:disabled + .control__radio::before {
+  opacity: 0.3;
+}
+
+.control__mark {
+  position: absolute;
+  top: calc(50% - 34px / 2);
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+}
+
+.control:hover .control__mark {
+  border: 1px solid #bababa;
+}
+
+.control:disabled .control__mark {
+  border: 1px solid #bababa;
+  opacity: 0.3;
+}
+
+.control__input[type="checkbox"]:checked + .control__mark::before {
+  position: absolute;
+  top: 8px;
+  left: 6px;
+  width: 18px;
+  height: 14px;
+  background-image: url("/img/main/form/checked.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+}
+
+.control__input[type="checkbox"]:checked:disabled + .control__mark::before {
+  opacity: 0.3;
+}
