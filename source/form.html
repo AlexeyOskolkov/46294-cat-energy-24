@@ -75,51 +75,53 @@
     <main class="page-form form">
       <h1 class="form__title">Подбор программы</h1>
       <p class="form__description">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
-      <fieldset class="form-cat">
-        <legend class="visually-hidden">Данные кота</legend>
-        <form class="form-cat__wrapper" action="https://echo.htmlacademy.ru" method="post">
-          <p class="field-group form-cat__item">
-            <label class="form-cat__label form-cat__label--name">Имя:*</label>
-            <input class="field" placeholder="Барсик" type="text" name="form-cat" required>
-          </p>
-          <p class="field-group form-cat__item">
-            <label class="form-cat__label form-cat__label--weight">Вес (кг):*</label>
-            <input class="field" placeholder="7" type="text" name="form-cat" required>
-          </p>
-          <p class="field-group form-cat__item">
-            <label class="form-cat__label form-cat__label--age">Возраст (лет):</label>
-            <input class="field" placeholder="7" type="text" name="form-cat">
-          </p>
-        </form>
-      </fieldset>
-      <fieldset class="form-appointment">
-        <legend class="visually-hidden">Цель программы</legend>
-        <div class="form-appointment__wrapper">
-          <ul class="form-appointment__list">
-            <li class="form-appointment__item">
-              <label class="control">
-                <input class="visually-hidden control__input" type="radio" name="form-appointment" value="slim" checked>
-                <span class="control__radio"></span>
-                <span class="control__label">Похудение</span>
-              </label>
-            </li>
-            <li class="form-appointment__item">
-              <label class="control">
-                <input class="visually-hidden control__input" type="radio" name="form-appointment" value="pro">
-                <span class="control__radio"></span>
-                <span class="control__label">Набор массы</span>
-              </label>
-            </li>
-            <li class="form-appointment__item">
-              <label class="control">
-                <input class="visually-hidden control__input" type="radio" name="form-appointment" value="unknown">
-                <span class="control__radio"></span>
-                <span class="control__label">Не знаю (нужен ваш совет)</span>
-              </label>
-            </li>
-          </ul>
-        </div>
-      </fieldset>
+      <div class="form__wrapper">
+        <fieldset class="form-cat">
+          <legend class="visually-hidden">Данные кота</legend>
+          <form class="form-cat__wrapper" action="https://echo.htmlacademy.ru" method="post">
+            <p class="field-group form-cat__item">
+              <label class="form-cat__label form-cat__label--name">Имя:*</label>
+              <input class="field" placeholder="Барсик" type="text" name="form-cat" required>
+            </p>
+            <p class="field-group form-cat__item">
+              <label class="form-cat__label form-cat__label--weight">Вес (кг):*</label>
+              <input class="field" placeholder="7" type="text" name="form-cat" required>
+            </p>
+            <p class="field-group form-cat__item">
+              <label class="form-cat__label form-cat__label--age">Возраст (лет):</label>
+              <input class="field" placeholder="7" type="text" name="form-cat">
+            </p>
+          </form>
+        </fieldset>
+        <fieldset class="form-appointment">
+          <legend class="visually-hidden">Цель программы</legend>
+          <div class="form-appointment__wrapper">
+            <ul class="form-appointment__list">
+              <li class="form-appointment__item">
+                <label class="control">
+                  <input class="visually-hidden control__input" type="radio" name="form-appointment" value="slim" checked>
+                  <span class="control__radio"></span>
+                  <span class="control__label">Похудение</span>
+                </label>
+              </li>
+              <li class="form-appointment__item">
+                <label class="control">
+                  <input class="visually-hidden control__input" type="radio" name="form-appointment" value="pro">
+                  <span class="control__radio"></span>
+                  <span class="control__label">Набор массы</span>
+                </label>
+              </li>
+              <li class="form-appointment__item">
+                <label class="control">
+                  <input class="visually-hidden control__input" type="radio" name="form-appointment" value="unknown">
+                  <span class="control__radio"></span>
+                  <span class="control__label">Не знаю (нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+      </div>
       <fieldset class="form-owner">
         <legend class="form-owner__title">Контактные данные (владельца кота)</legend>
         <form class="form-owner__wrapper" action="https://echo.htmlacademy.ru" method="post">

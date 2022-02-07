@@ -6,6 +6,18 @@
   padding: 0;
 }
 
+@media (min-width: @tablet-width) {
+  .form-cat {
+    margin-bottom: 72px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-cat {
+    width: 570px;
+  }
+}
+
 .form-cat__item {
   display: flex;
   align-items: center;
@@ -16,6 +28,14 @@
   &:last-child {
     padding-bottom: 24px;
     border-bottom: 1px solid #d9d9d9;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-cat__item:last-child {
+    border: none;
+    margin: 0;
+    padding: 0;
   }
 }
 

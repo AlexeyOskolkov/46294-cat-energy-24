@@ -55,14 +55,26 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .form__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .form__required--wrapper {
     display: flex;
     align-items: center;
+    margin-bottom: 72px;
   }
 }
 
 .form__button {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
   width: 100%;
   color: #ffffff;
   background-color: @basic_green;
@@ -71,7 +83,13 @@
 
 @media (min-width: @tablet-width) {
   .form__button {
-    width: auto;
+    width: 282px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__button {
+    width: 568px;
   }
 }
 

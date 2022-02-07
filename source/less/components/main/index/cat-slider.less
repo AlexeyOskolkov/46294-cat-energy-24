@@ -5,13 +5,146 @@
 
 @media (min-width: @tablet-width) {
   .cat-slider {
-    background-color: #eaeaea;
     margin-top: 72px;
+    margin-bottom: 58px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .cat-slider {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .cat-slider {
+    position: absolute;
+    right: 0;
+    bottom: 0;
     background-color: #ffffff;
+  }
+}
+
+.cat-slider__image--tablet {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .cat-slider__image--mobile {
+    display: none;
+  }
+
+  .cat-slider__image--tablet {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.cat-slider__range-scale {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: @tablet-width) {
+  .cat-slider__range-scale {
+    margin-top: 28px;
+  }
+}
+
+.cat-slider__name {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+  border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .cat-slider__name {
+
+    border-bottom: 1px dotted #dcdcdc;
+    cursor: pointer;
+
+    &:hover {
+      border-bottom: 1px solid #dcdcdc;
+    }
+
+    &:active {
+      border: none;
+      margin-bottom: 1px;
+    }
+  }
+}
+
+.cat-slider__range-bar {
+  position: relative;
+  width: 86px;
+  height: 14px;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 0 13px;
+}
+
+@media (min-width: @tablet-width) {
+  .cat-slider__range-bar {
+    width: 426px;
+    height: 6px;
+    background-color: #dcdcdc;
+    margin: 0 23px;
+  }
+}
+
+.cat-slider__range-toggle {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 36px;
+  height: 6px;
+  background-color: @basic_green;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@media (min-width: @tablet-width) {
+  .cat-slider__range-toggle {
+    left: calc(50% - 34px/2);
+    top: -17px;
+    width: 34px;
+    height: 34px;
+    background-color: #ffffff;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+
+    &:active {
+      border: 1px solid #68b738;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .cat-slider__range-toggle::before {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 8px;
+    height: 8px;
+    background-color: @basic_green;
+    border-radius: 50%;
+    content: "";
+
+    &:active::before {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      width: 8px;
+      height: 8px;
+      background-color: @basic_green;
+      border-radius: 50%;
+      content: "";
+    }
   }
 }

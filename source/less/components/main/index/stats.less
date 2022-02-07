@@ -8,6 +8,12 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .stats {
+    margin: 0;
+  }
+}
+
 .stats__text {
   font-family: "Arial", sans-serif;
   font-size: 14px;
@@ -22,6 +28,13 @@
   .stats__text {
     font-size: 16px;
     line-height: 24px;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .stats__text {
+    max-width: 450px;
   }
 }
 
@@ -38,6 +51,7 @@
 @media (min-width: @desktop-width) {
   .stats__container {
     display: block;
+    margin-top: 84px;
   }
 }
 
@@ -105,7 +119,7 @@
 @media (min-width: @tablet-width) {
   .stats__item--money {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 30px;
     max-width: 175px;
     text-align: end;
     margin: 0;
