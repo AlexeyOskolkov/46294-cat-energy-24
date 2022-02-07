@@ -135,6 +135,14 @@
   background-color: @basic_green;
   padding: 10px 53px;
   text-align: center;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -158,7 +166,7 @@
     content: "";
     position: absolute;
     top: -39px;
-    left: calc(50% - 30px/2);
+    left: calc(50% - 30px / 2);
     width: 30px;
     height: 2px;
     background-color: #d3d3d3;
@@ -178,7 +186,7 @@
     &::before,
     &::after {
       top: -79px;
-      left: calc(50% - 60px/2);
+      left: calc(50% - 60px / 2);
       width: 60px;
     }
   }
@@ -208,4 +216,12 @@
   background-color: @basic_grey;
   margin: 0;
   padding: 10px 39px;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
 }

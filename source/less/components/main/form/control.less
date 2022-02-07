@@ -21,7 +21,7 @@
 
 .control__radio {
   position: absolute;
-  top: calc(50% - 30px/2);
+  top: calc(50% - 30px / 2);
   left: 0;
   width: 30px;
   height: 30px;
@@ -40,8 +40,8 @@
 
 .control__input[type="radio"]:checked + .control__radio::before {
   position: absolute;
-  top: calc(50% - 18px/2);
-  left: calc(50% - 18px/2);
+  top: calc(50% - 18px / 2);
+  left: calc(50% - 18px / 2);
   width: 18px;
   height: 18px;
   background-color: @basic_green;
@@ -53,9 +53,13 @@
   background-color: @basic_green;
 }
 
+.control__input[type="radio"]:checked:disabled + .control__radio::before {
+  opacity: 0.3;
+}
+
 .control__mark {
   position: absolute;
-  top: calc(50% - 34px/2);
+  top: calc(50% - 34px / 2);
   left: 0;
   width: 30px;
   height: 30px;
@@ -73,12 +77,16 @@
 
 .control__input[type="checkbox"]:checked + .control__mark::before {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 8px;
+  left: 6px;
   width: 18px;
   height: 14px;
-  background-image: url("/source/img/main/form/checked.svg");
+  background-image: url("/img/main/form/checked.svg");
   background-repeat: no-repeat;
   background-position: center;
   content: "";
+}
+
+.control__input[type="checkbox"]:checked:disabled + .control__mark::before {
+  opacity: 0.3;
 }

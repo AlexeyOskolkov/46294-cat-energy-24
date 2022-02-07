@@ -5,11 +5,19 @@
   font-size: 16px;
   line-height: 20px;
   color: #000000;
+  margin-bottom: 35px;
+}
+
+@media (min-width: @tablet-width) {
+  .product-additional {
+    margin-bottom: 69px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .product-additional {
     min-width: 900px;
+    margin-bottom: 86px;
   }
 }
 
@@ -21,6 +29,16 @@
 .product-additional__item {
   list-style-type: none;
   border-bottom: 1px solid #e6e6e6;
+
+  &:first-child {
+    border-top: 1px solid #e6e6e6;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product-additional__item:first-child {
+    border-top: 1px solid #e6e6e6;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -110,18 +128,24 @@
   background-color: @basic_green;
   margin-top: 15px;
   margin-bottom: 19px;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {
   .product-additional__button {
     display: flex;
-    background-color: @basic_green;
   }
 }
 
 @media (min-width: @desktop-width) {
   .product-additional__button {
     display: block;
-    background-color: @basic_green;
   }
 }
